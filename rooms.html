@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>object detection - rooms</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+        <script src="rooms.js"></script>
+        <link rel="stylesheet" href="rooms.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                <a href="home.html"><img class="logo" src="logo.png"></a>
+                select room
+            </h1>
+        </div>
+        <div class="inline_div">
+            <div class="room" id="lroom" onclick="living()">
+                <center>
+                    <img class="room_img" id="l_img" src="l.png">
+                    <h3>Living Room</h3>
+                </center>
+            </div>
+            <div class="room" id="kroom" onclick="kitchen()">
+                <center>
+                    <img class="room_img" id="k_img" src="k.png">
+                    <h3>Kitchen</h3>
+                </center>
+            </div>
+            <div class="room" id="broom" onclick="bed()">
+                <center>
+                    <img class="room_img" id="b_img" src="b.png">
+                    <h3>Bedroom</h3>
+                </center>
+            </div>
+        </div>
+        <div class="inline_div">
+            <div class="room" id="droom" onclick="dine()">
+                <center>
+                    <img class="room_img" id="d_img" src="d.png">
+                    <h3>
+                        Dining Room/
+                        <br>
+                        Hall
+                    </h3>
+                </center>
+            </div>
+            <div class="room" id="oroom" onclick="office()">
+                <center>
+                    <img class="room_img" id="o_img" src="o.png">
+                    <h3>
+                        Study Room/
+                        <br>
+                        Work
+                    </h3>
+                </center>
+            </div>
+        </div>
+    </body>
+</html>

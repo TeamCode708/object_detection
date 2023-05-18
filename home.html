@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>object detection</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+        <script src="home.js"></script>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                <a href="home.html"><img class="logo" src="logo.png"></a>
+                object detection
+            </h1>
+        </div>
+        <div class="split left">
+            <h2>Welcome to Object Detection web app!</h2>
+            <h4>This web-app helps you to detect the objects found in the house. It uses an object detection
+                model called CoCoSSD that aims to identify multiple objects in a single image. You can simply
+                select the room and detect multiple objects found in that particular room. It is actually kinda
+                useful in case you forgot where you kept your things, you can just simply check where the object
+                is using our object detection web app.
+                <br>
+                So, what are you waiting for? Go ahead and enjoy using this wonderful web-app! Kindly give us feedback
+                if you like my app and share it with your friends and family!
+            </h4>
+            <br>
+            <p class="btn navigate" onclick="navigate()">Get Started</p>
+        </div>
+        <div class="split right">
+            <img class="bg" src="bg.png">
+        </div>
+    </body>
+</html>
